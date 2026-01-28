@@ -13,8 +13,7 @@
 // }
 // console.log("Total number of a or A is :",sum);
 
-
-//* Task-3:
+//* Task-2:
 // Check whether a string contains all the vowels a, e, i, o, u
 
 // solution
@@ -24,7 +23,6 @@
 // let isI = false;
 // let isO = false;
 // let isU = false;
-
 
 // for(let i=0; i<str.length; i++) {
 //     if(str[i].toLowerCase() === "a"){
@@ -51,4 +49,23 @@
 //     console.log("No, all vowels are not present here.");
 // }
 
+// Task-3:
+// If a given string has either x, replace x by y. if the given string has X, replace it by Y.
 
+const str = "Hello xx to XX";
+// const str = "Hello";
+
+// if (str.includes("x")) {
+//   const newStr = str.replace(/x/g, 'y').replace(/X/g, 'Y');
+//   console.log(newStr);
+// }
+// else{
+//     console.log("This string has no x or X.");
+// }
+if (str.includes("x")) {
+  const newStr = str.split('x').join('y').split('X').join('Y');
+  console.log(newStr);
+}
+else{
+    console.log("This string has no x or X.");
+}
